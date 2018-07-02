@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+.script_second_page{
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px;
+    line-height: 45px;
+}
+.flash{
+    color: red;
+    font-size: 18px;
+}
+body{
+    
+    height:40rem;
+    margin:5px;
+    background: url(home.png) no-repeat center center;
+    background-size: cover;
+}
+.login{
+    position: absolute;
+    top: 44%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: rgba(78, 71, 92, 0.5);
+    padding: 50px 40px;
+    font-weight: bold;
+    line-height: 1.9;
+    color: rgb(221, 221, 215);
+}
+.login input{
+    width: 100%;  
+}
+.login input[type="text"],
+.login input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+}
+::placeholder{
+    color: rgba(255, 255, 255, .8);
+}
+.login input[type="submit"]{
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background:#ff267e;
+    color:#fff;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.login input[type="submit"]:hover{
+    transform: scale(1.1);
+}
+.register{
+    position: absolute;
+    top: 50%;
+    left: 41%;
+    width: 300px;
+    height: 450px;
+    padding: 60px 40px;
+    
+}
+.start_game, .logout{
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background:#ff267e;
+    color:#fff;
+    border-radius: 4px;
+    margin: 10px;
+    position: relative;
+    left: 44%
+   
+
+}
+.start_game:hover, .logout:hover{
+    background: lightgrey;
+}
+

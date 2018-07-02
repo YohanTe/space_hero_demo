@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Space Hero</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../static/home.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='home.css')}}">
+</head>
+<body >
+    <header >
+            <h1>Welcome Player!! </h1>
+    </header>
+   <div class="login" >
+       <h2 >Login Here</h2>
+       <form action="/login" method="POST">
+           <p>User name:</p>
+           <input type="text" name="username" placeholder="Enter user name">
+           <p>Password:</p>
+           <input type="password" name="password" placeholder="Enter user password"><br>
+           <input type="submit" value="Sign In">
+
+       </form>
+   </div>
+   <div class="register login" >
+        <h2 >Register Here</h2>
+        <form action="/register" method="POST">
+            <p>First name:</p>
+            <input type="text" name="first_name" placeholder="First name">
+            <p>User name:</p>
+            <input type="text" name="username" placeholder="Create user name">
+            <p>Password:</p>
+            <input type="password" name="password" placeholder="Create your password"><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    {% with msgs = get_flashed_messages() %}
+        {% if msgs %}
+            {% for msg in msgs %}
+                <p class='flash'>{{ msg }}</p>
+            {% endfor %}
+        {% endif %}
+     {% endwith %}
+
+ 
+</body>
